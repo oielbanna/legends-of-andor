@@ -1,60 +1,47 @@
-# TEAM 2 
+# Legends of Andor
+Board game implementation as a web game using Phaser and Socket.io. 
 
-### Team Members
+
+
+## Game Instructions
+
+In order to play the game you need a minimum of 2 players on the same network. 
+Please check <a href="legendsofandor.com"/>the official game website</a> for game rules and instructions.
+
+## Installation
+In order to run this game locally, you need to host the server on your own network.
+Follow the server instructions on only one device and the client instructions on all the devices.
+
+### Server
+```
+cd server
+npm install
+npm run dev
+```
+Check the terminal for a console log similar to this: <br />
+<i> addr: xxx.xxx.xxx </i><br />
+You will use this IP address in all the clients in order for them to access the correct server on the network.
+
+### Client
+Go to client/src/config/env.js<br />
+Replace <i>localhost</i> with the ip you found logged on the server. <br />
+Do this for every client device. <br />
+Then, in the terminal follow the instructions below.
+```
+cd client
+yarn install
+yarn dev
+```
+Go to **https://localhost:8080/** <br />
+Click advance. <br />
+You also have to allow insecure content in the site settings. 
+
+
+### Contributors
+ * *Omar Ibrahim*
  * *Philip Cheng*
  * *William Chien*
  * *Anthony Cui*
  * *Jacek Dziewonski*
- * *Omar Ibrahim*
  * *Cayce McClenen*
  * *Justin Sun*
-
-## Instructions
-
-Some instructions on how to start the game. 
-
-### Client
-
-#### Installing dependencies
-First, we need to install all dependencies for the client. 
-(Install node and yarn if you don't have them)
-
-From the project directory:
-```
-cd client
-```
-Then, in the client folder:
-```
-yarn install
-```
-
-#### Starting the client
-Simply run
-```
-yarn dev
-```
-
-### Server
-
-#### Installing dependencies
-First, we need to install all dependencies for the server. 
-
-From the project directory:
-```
-cd server
-```
-Then, in the server folder:
-```
-yarn install
-```
-
-#### Starting the server
-Simply run
-```
-npm run serve
-```
-
-### Game interface
-```
-localhost:8080
-```
