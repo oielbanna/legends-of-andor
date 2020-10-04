@@ -1,7 +1,7 @@
 # Legends of Andor
 Board game implementation as a web game using Phaser and Socket.io. 
 
-
+<img src="landing.png" />
 
 ## Game Instructions
 
